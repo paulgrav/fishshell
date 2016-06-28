@@ -17,7 +17,13 @@ set __fish_git_prompt_char_stashstate '↩'
 set __fish_git_prompt_char_upstream_ahead '↑'
 set __fish_git_prompt_char_upstream_behind '↓'
 
-set -x PATH $PATH /usr/local/heroku/bin $HOME/.bin
+if test -d /usr/local/heroku/bin
+    set -x PATH $PATH /usr/local/heroku/bin
+end
+
+if test -d $HOME/.bin
+    set -x PATH $PATH $HOME/.bin
+end
 
 for x in ~/.config/fish/conf.d/*.fish
 	source $x
