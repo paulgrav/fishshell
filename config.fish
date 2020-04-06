@@ -29,3 +29,4 @@ for x in ~/.config/fish/conf.d/*.fish
 	source $x
 end
 
+set -x PATH $PATH:/sbin
