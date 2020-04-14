@@ -29,8 +29,9 @@ for x in ~/.config/fish/conf.d/*.fish
 	source $x
 end
 
-set -x PATH $PATH:/sbin
+set -x PATH $PATH:/sbin:/usr/sbin
 
+set -x EDITOR vi
 
 
 # The next line updates PATH for the Google Cloud SDK.
