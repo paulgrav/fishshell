@@ -12,12 +12,12 @@ if test -d /usr/local/heroku/bin
     set -x PATH $PATH /usr/local/heroku/bin
 end
 
-if test -d /Users/pgrave/.cargo/bin
-    set -x PATH $PATH /Users/pgrave/.cargo/bin
+if test -d $HOME/.cargo/bin
+    set -x PATH $PATH $HOME/.cargo/bin
 end
 
-if test -d /Users/pgrave/google-cloud-sdk/bin
-    set -x PATH $PATH /Users/pgrave/google-cloud-sdk/bin
+if test -d $HOME/google-cloud-sdk/bin
+    set -x PATH $PATH $HOME/google-cloud-sdk/bin
 end
 
 
