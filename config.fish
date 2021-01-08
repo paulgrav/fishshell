@@ -7,6 +7,7 @@ alias k "kubectl"
 alias mk "minikube"
 
 set -x PATH $PATH /usr/local/sbin
+set -x PATH $PATH /opt/homebrew/bin
 
 if test -d /usr/local/heroku/bin
     set -x PATH $PATH /usr/local/heroku/bin
